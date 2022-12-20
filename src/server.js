@@ -96,6 +96,7 @@ app.put("/favorites", ({body},res) => {
         })
         .catch( err => console.log(err) )
 })
+app.delete("/favorites/:card_id", (req,res)=> res.send("NOT IMPLEMENTED"))
 
 module.exports = {
     app:app,
